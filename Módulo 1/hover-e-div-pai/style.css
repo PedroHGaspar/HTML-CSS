@@ -1,0 +1,46 @@
+
+body
+{
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	
+	 /*Configurações globais do CSS, vai valer para a página inteira.*/
+		height: 100%;
+	
+		background: linear-gradient(to BOTTOM, #000000, #000000, #000000, #3f3c3c, #000000);/*O LINEAR GRADIENT SERVE PARA FAZER DEGRADE. NO LUGAR DO TO RIGHT, PODE SER TO LEFT, TO BOTTOM, TO DOWN, 45deg, 70deg, 190deg e qualquer deg, deg é degrees.*/
+
+		background-attachment: fixed; /*SERVE PARA NAO DAR MERDA KKKKKK SE TIRAR DA A MAIOR MERDA, PODE TESTAR*/
+    
+}
+
+.menu
+{
+	position: absolute; 
+	top: 7%;
+	width: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%); /*Esse transform translate serve para alinhas os spans nos eixos X e Y para que eles não fiquem sobrepostos um a outro ou pulem da tela por algum motivo*/
+	/* width: 1060px; Largura do MENU, pode ser aumentada caso haja mais itens no menu e ele acabe quebrando para baixo */
+	display: flex;/**/
+	align-items: center;/*Faz com que os itens fiquem alinhados no centro da DIV PAI*/
+	justify-content: space-evenly; /*Faz com que tenha a mesma distância entre cada um dos spans*/
+	
+}
+
+.nav
+{
+	padding: 0 10px;
+	color: #fff; /*SEMPRE usar o color para colocar cores nas fontes. NUNCA usar font-color.*/
+	cursor: pointer; /*MAOZINHA*/
+	font-size: 35px; /*Tamanho da fonte*/
+	text-transform: uppercase;	/*transforma tudo em letra maiúscula*/
+	letter-spacing: 3px; /*Espaçamento das letras*/
+	border-color: green;
+	transition: 0.3s;
+	
+}
+
+.nav:hover{
+	border-right: 2.5px solid rgba(102, 255, 0, 0.773);
+
+	border-left: 2.5px solid rgba(102, 255, 0, 0.773);
+}
