@@ -1,0 +1,35 @@
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	background: linear-gradient(15deg ,#5AF5DD, #47DE9D, #50FA81, #000000);
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+.animated-word {
+	font-family: Helvetica;
+	letter-spacing: 24px;
+	font-weight: 700;
+	font-size: 40px;
+	text-align: center;
+	color: #1f2127;
+  cursor: pointer;
+  max-width: 600px; 
+  width: 100%; 
+  outline: 3px solid;
+  outline-color: #50B9FA;
+  outline-offset: 60px;
+  transition: all 1100ms cubic-bezier(1, 1, 1, 1);
+}
+
+.animated-word:hover {
+	color: #50B9FA;
+  outline-color: rgba(71, 126, 232, 0);
+  outline-offset: 300px;
+}
