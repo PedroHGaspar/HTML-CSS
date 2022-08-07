@@ -1,0 +1,33 @@
+@charset "UTF-8"; /*Para não ter problemas com caracteres*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif; /*Fonte escolhida*/
+    
+}
+
+body{
+    background-image: linear-gradient(to right, #B57900, #754E00); /*Degradê*/
+}
+
+p{
+    text-align: justify;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px; /*Para criar uma bordinha arredondada*/
+    box-shadow: 5px 5px 15px rgba(54, 36, 0, 0.842); /*Para criar um sombreamento*/
+    width: 600px; /*Largura do Main*/
+    padding: 10px; /*Adiciona uma bordinha para o texto não ficar colado nos cantos*/
+    margin: auto; /*Faz a margin ficar automática, a tela irá se adaptar independentemente do tamanho que a pessoa esteja usando o navegador.*/
+}
+
+h1{
+    color: #F5A500;
+    text-align: center;
+    text-shadow: 1px 1px 2px #a56e00a6;
+}
+
+h2{
+    color: #362400;
+}
