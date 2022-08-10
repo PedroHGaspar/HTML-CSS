@@ -1,0 +1,47 @@
+html,
+body {
+height: 98vh;
+}
+
+body {
+display: flex;
+width: 100%;
+overflow: hidden;
+align-items: center;
+text-align: center;
+justify-content: center;
+flex-direction: column;/*display e flex directions são ótimos para criação de sites. Estudar sempre e ver qual a melhor opção para cada caso.*/
+background-color: #020e26;
+}
+
+h1 {
+position: absolute;/*evitar usar pq sobrepõe tudo e pode quebrar em páginas maiores e com mais coisas. Da para usar mais os displays.*/
+color: #ffffff;
+font-size: 100px;
+transform: translate(-50%, -100%);
+animation: meta-efeito 15s infinite ease-in-out;/*indica o tempo em segundos. se tem 3 filhos, cada um terá 5 segundos e o total será 15s.*/
+}
+
+h1:nth-child(1) {
+animation-delay: -15s;
+}
+
+h1:nth-child(2) {
+animation-delay: -10s;
+
+}
+h1:nth-child(3) {/*nthchild é para selecionar os filhos dentro da div. filho1, filho2 e filho3.*/
+animation-delay: -5s;
+}
+
+    @keyframes meta-efeito {
+
+        30%, 85% {/*Aqui essa porcentagem é para decidir com quanto irá começar e com quanto irá terminar o texto*/
+            filter: blur(10px);/*o blur é para quando as letras começarem a desaparecer, elas desaparecem com um efeito borrado(blur)*/
+            opacity: 1;/*a opacidade é basicamente de 0 para 1, fdazer testes para o melhor jeito.*/
+        }
+        30%, 85% {
+            filter: blur(10px);
+            opacity: 0;
+        }/*Precisa ter 2 metas aqui, por que se não os textos vão ficar um em cima do outro. Da para brincar com a porcentagem para estudar e ver seu melhor uso em cada caso.*/
+    }
