@@ -1,0 +1,53 @@
+.notification{
+    position: relative;
+    display: inline-block;/*Define o tamanho*/
+    max-width: 300px;/*Define o tamanho*/
+    padding: 20px 15px;/*Ajuda a aumentar o tamanho para os lados e para cima, para as letras não ficarem coladas na "parede"*/
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 5px 32px rgb(63, 0, 92);/*lado direito, baixo e envolta*/
+    transform: translateY(30px);
+    opacity: 0;
+    /* visibility: hidden; */
+    animation: fade 4s linear forwards; /*Faz aparecer e sumir*/
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.progress{
+    position: absolute;/*Position absolute para a barrinha ficar em cima da caixa cinza*/
+    left: 5px;/*Alinha no meio da caixa*/
+    bottom: 5px;/*Alinha para não ficar muito pra baixo*/
+    width: 0;/*Faz o width ser automatico e o progresso funcionar*/
+    height: 3px;
+    background-image: linear-gradient(to right, rgb(54, 0, 50), rgb(102, 0, 122));/*Da a cor da barrinha*/
+    border-radius: 5px;
+    animation: progress 3s linear forwards;/*O forwards é importante pois faz ele ir até o final e sumir no momento correto--O tempo foi 3s e o normal é 4s, para a barrinha chegar no final e a caixa sumir 1s depois.*/
+}
+
+@keyframes fade{
+    
+    8%{/*Faz começar o efeito de aparecer. Se for setado pra 0, ele nao tem efeito para aparecer.*/
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+    90%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-30px);/*esse -30px faz ele sumir com um efeito de ir pra cima. Bem top.*/
+    }
+}
+
+@keyframes progress{
+    to{
+        width: calc(100% - 10px);/*Faz a barrinha chegar até -10px no final da caixa*/
+    }
+}
