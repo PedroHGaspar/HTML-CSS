@@ -13,6 +13,14 @@
             background-position: center center;/*faz com que a imagem, quando a pessoa diminui a tela do navegador, faça com que o centro da img seja o ponto de referência.*/
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            /*da pra usar TODO o conteúdo acima como shorthand! ficaria assim: 
+            color - image - position - repeat - size - attachment
+            Logo abaixo é a demonstração.
+            */
+
+            background: #000000 url('imagens/wallpaper002.jpg') center center no-repeat cover fixed;
+            /*talvez o size (cover) não funcione, pois alguns navegadores ainda n aceitam o size como shorthand. É só colocar como background-size normalmente.*/
         }
         main{
             background-color: #ffffff;
