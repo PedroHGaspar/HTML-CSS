@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.msgBottom{
+    text-align: center;
+    color: lightgreen;
+    align-items: center;
+    font-family: serif;
+    letter-spacing: 3px;
+    position: fixed;
+    text-align: center;
+    bottom: 15px;
+    width: 88%;
+}
+a.msgBottom{
+    margin: 0;
+    padding: 0;
+    width: 159px;
+}
