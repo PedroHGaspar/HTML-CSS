@@ -13,7 +13,6 @@ header{
     color: #ffffff;
     text-align: center;
     margin: -10px 0px;
-    margin-bottom: 40px;
 }
 
 section{
@@ -31,8 +30,8 @@ section.primeiraImagem{
 }
 
 section.normal{
-    background-color: #969696;
-    color: #000000;
+    background-color: #292929;
+    color: #ffffff;
 }
 section.imagem{
     background-color: #ffffff;
@@ -40,7 +39,7 @@ section.imagem{
     font-family: 'Indie Flower', cursive;
 }
 section.imagem > pre{
-    background-color: #000000;
+    background-color: #00000054;
     display: inline-block;
     padding-top: 10px;
 }
@@ -52,16 +51,42 @@ header > h1{
     font-variant: small-caps;
 }
 
-footer, a{
-    background-color: #000000;
-    text-align: center;
-    color: lightgreen;
-    align-items: center;
-    font-family: serif;
-    letter-spacing: 3px;
-}
-
 pre{
     font-family: 'Indie Flower', cursive;
     font-size: 21px;
+}
+
+section#img1{
+    background-image: url(../projeto1/imagens/lampada1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-size: 1750px 2200px; no lugar disso aqui eu usei o cover*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img2{
+    background-image: url(../projeto1/imagens/lampada2.jpg);
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    /* background-size: 1730px 2000px; no lugar disso aqui eu usei o cover*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img3{
+    background-image: url(../projeto1/imagens/lampada3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-size: 1750px 2000px; no lugar disso aqui eu usei o cover*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer, a{
+    background-color: #000000;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    font-family: serif;
+    letter-spacing: 3px;
+    font-size: 16px;
 }
