@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    min-height: 100vh;
+}
+
+header{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    margin: -10px 0px;
+}
+
+section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 2em;
+    padding-left: 100px;
+    font-size: 1vw;
+}
+section.primeiraImagem{
+    padding-top: 0%;
+    padding-bottom: 10%;
+    line-height: 2em;
+    padding-left: 100px;
+}
+
+section.normal{
+    background-color: #292929;
+    color: #ffffff;
+}
+section.imagem{
+    background-color: #ffffff;
+    color: #ffffff;
+    font-family: 'Indie Flower', cursive;
+}
+section.imagem > pre{
+    background-color: #00000054;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+
+header > h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-variant: small-caps;
+}
+
+pre{
+    font-family: 'Indie Flower', cursive;
+    font-size: 21px;
+}
+
+section#img1{
+    background-image: url(../projeto1/imagens/lampada1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-size: 1750px 2200px; no lugar disso aqui eu usei o cover*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img2{
+    background-image: url(../projeto1/imagens/lampada2.jpg);
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    /* background-size: 1730px 2000px; no lugar disso aqui eu usei o cover*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img3{
+    background-image: url(../projeto1/imagens/lampada3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-size: 1750px 2000px; no lugar disso aqui eu usei o cover*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer, a{
+    background-color: #000000;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    font-family: serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
