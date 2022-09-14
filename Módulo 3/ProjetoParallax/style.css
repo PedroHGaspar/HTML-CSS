@@ -57,7 +57,7 @@ pre{
 }
 
 section#img1{
-    background-image: url(../Projeto\ Parallax/imagens/lampada1);
+    background-image: url(../ProjetoParallax/imagens/lampada1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     /* background-size: 1750px 2200px; no lugar disso aqui eu usei o cover*/
@@ -65,7 +65,7 @@ section#img1{
     background-attachment: fixed;
 }
 section#img2{
-    background-image: url(../Projeto\ Parallax/imagens/lampada2);
+    background-image: url(../ProjetoParallax/imagens/lampada2.jpg);
     background-position: center 80%;
     background-repeat: no-repeat;
     /* background-size: 1730px 2000px; no lugar disso aqui eu usei o cover*/
@@ -73,7 +73,7 @@ section#img2{
     background-attachment: fixed;
 }
 section#img3{
-    background-image: url(../Projeto\ Parallax/imagens/lampada3);
+    background-image: url(../ProjetoParallax/imagens/lampada3.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     /* background-size: 1750px 2000px; no lugar disso aqui eu usei o cover*/
