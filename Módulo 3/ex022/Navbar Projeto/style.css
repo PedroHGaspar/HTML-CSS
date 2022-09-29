@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap');
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    font-family: 'Indie Flower', cursive;
+}
+
+.linksHeader {
+    background: #5C4A1D;
+    color: #ffffff;
+    line-height: 32px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.linksHeader:hover {
+    background: transparent;
+    color: #000000;
+}
+
+.linksHeader:before,
+.linksHeader:after {
+    background: #000;
+    transition: all 0.5s ease;
+}
+
+.passMouse {
+    width: auto;
+    padding: 10px 25px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 6px;
+}
+
+section{
+    width: auto;
+    padding-right: 8em;
+    padding-left: 16em;
+    text-align: left;
+    letter-spacing: 2px;
+    line-height: 33px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Bitter', serif !important;
+    display: flex;
+}
+img{
+    width: 50%;
+    height: 50%;
+}
